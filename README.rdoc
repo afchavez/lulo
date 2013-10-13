@@ -1,3 +1,0 @@
-Lulo
-
-Web version of luloapp for stores using rails 4.0
