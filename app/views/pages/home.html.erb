@@ -1,7 +1,15 @@
 <div class="jumbotron center">
      <h1>Empieza a comprar ahora!</h1>
+
+     <% if user_signed_in? %>
+         
+          # do something
+     <% else %>
+
      <p>
-       <%= link_to "Ingresar", "#", class: "btn btn-default btn-lg" %>
-       <%= link_to "Regístrate", "#", class: "btn btn-primary btn-lg" %>
-  </p>    
+       <%= link_to "Ingresar", new_user_session_path, class: "btn btn-default btn-lg" %>
+       <%= link_to "Regístrate", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+  </p>  
+ <% end %>
+
 </div>
